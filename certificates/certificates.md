@@ -235,6 +235,11 @@ cfssl gencert \
   admin-csr.json | cfssljson -bare admin
  ```
  
+### Verify data
+```
+cfssl certinfo -cert admin.pem
+```
+ 
 ### Workers / Kubelets
 CN has to be like this `system:node:<nodeName>`
  
